@@ -1,18 +1,45 @@
+/* Estilo base da página */
 body {
-  font-family: Arial, sans-serif;
   background-color: #f5f0fa;
+  font-family: Arial, sans-serif;
   color: #2e003e;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Caixa central com borda arredondada e fundo roxo claro */
+.container {
+  background-color: #f2c7ff;
+  border-radius: 15px;
+  padding: 30px;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-  color: #6a0dad;
+/* Cabeçalhos */
+h1 {
+  color: #a84ed6;
+  font-size: 28px;
 }
 
+h2 {
+  color: #9e40c9;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #7d28a9;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Links */
 a {
-  color: #7b4bb7;
+  color: #6d1fa6;
   text-decoration: none;
 }
 
@@ -20,17 +47,52 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Seções dos jogos */
 .jogo {
-  background-color: #eae0f8;
+  background-color: #f9e6ff;
   padding: 15px;
   margin-bottom: 20px;
-  border-left: 5px solid #a66bcb;
-  border-radius: 5px;
+  border-left: 5px solid #d282ff;
+  border-radius: 8px;
 }
 
+/* Imagens */
 img {
   max-width: 100%;
-  margin: 10px 0;
-  border: 2px solid #d4b3f3;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #dda8ff;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Código */
+code {
+  background-color: #ebd8ff;
+  padding: 2px 5px;
   border-radius: 4px;
+  font-family: Consolas, monospace;
+  color: #6a0080;
+}
+
+/* Linhas divisórias */
+hr {
+  border: none;
+  border-top: 2px solid #e0aaff;
+  margin: 30px 0;
+}
+
+/* Parágrafos */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
