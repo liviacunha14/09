@@ -1,38 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Flexbox Games</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        img {
-            max-width: 100%;
-            margin: 10px 0;
-            border: 2px solid #ccc;
-            border-radius: 6px;
-        }
-        ul {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .jogo {
-            background-color: #fff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Games</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body>
 
@@ -45,15 +18,15 @@
     <h2>Jogos Escolhidos</h2>
 
     <div class="jogo">
-        <h3>1. Flexbox Froggy</h3>
-        <p><strong>Link:</strong> <a href="https://flexboxfroggy.com/" target="_blank">https://flexboxfroggy.com/</a></p>
-        <p><strong>Justificativa:</strong> Escolhi esse jogo porque ele é visual, didático e divertido. Os comandos são aplicados na prática e mostram resultados imediatos, o que me ajudou a entender o posicionamento dos elementos com Flexbox.</p>
+        <h3>1. Flexbox Adventure</h3>
+        <p><strong>Link:</strong> <a href="https://codingfantasy.com/games/flexboxadventure/play" target="_blank">https://codingfantasy.com/games/flexboxadventure/play</a></p>
+        <p><strong>Justificativa:</strong> Escolhi esse jogo pois achei o design e visual muito divertido e aparenta ser uma história em formato de RPG, o que eu gosto muito.</p>
     </div>
 
     <div class="jogo">
-        <h3>2. Flexbox Adventure</h3>
-        <p><strong>Link:</strong> <a href="https://codingfantasy.com/games/flexboxadventure/play" target="_blank">https://codingfantasy.com/games/flexboxadventure/play</a></p>
-        <p><strong>Justificativa:</strong> Esse jogo é como uma história em formato de RPG, o que torna a experiência de aprender mais envolvente. Ele introduz os conceitos de Flexbox em desafios que exigem lógica e criatividade.</p>
+        <h3>2. Flexbox Froggy</h3>
+        <p><strong>Link:</strong> <a href="https://flexboxfroggy.com/" target="_blank">https://flexboxfroggy.com/</a></p>
+        <p><strong>Justificativa:</strong> Escolhi esse jogo porque ele é visualmente engraçado e com cores chamativas.</p>
     </div>
 
     <hr>
@@ -73,14 +46,14 @@
 
     <h3>Flexbox Froggy - Níveis Desafiadores</h3>
 
-    <p><strong>Nível 10:</strong> Foi desafiador entender a diferença entre `justify-content` e `align-items`, pois os sapos não iam para onde eu esperava. Precisei revisar o conceito de eixo principal e eixo cruzado.</p>
-    <img src="imgs/flexboxfroggy1.png" alt="Flexbox Froggy - Nível 10">
+    <p><strong>Nível 4:</strong> Foi mais complicado porque me confudi entre <code>space-between</code> e <code>space-around</code>, os sapos não ficavam totalmente nos devidos lugares, mas depois raciocinei melhor e consegui responder certo.</p>
+    <img src="imgs/flexboxfroggy1.png" alt="Flexbox Froggy - Nível 4">
 
-    <p><strong>Nível 16:</strong> A combinação de propriedades confundiu um pouco. Usei `align-items: flex-end` com `justify-content: space-around` e tive que testar várias vezes até entender como o espaço era distribuído.</p>
-    <img src="imgs/flexboxfroggy2.png" alt="Flexbox Froggy - Nível 16">
+    <p><strong>Nível 7:</strong> Não lembrava de separar os sapos primeiro para depois usar o <code>align-items: flex-end</code>.</p>
+    <img src="imgs/flexboxfroggy2.png" alt="Flexbox Froggy - Nível 7">
 
-    <p><strong>Nível 24:</strong> Esse nível exige o uso conjunto de várias propriedades ao mesmo tempo (`flex-direction`, `justify-content` e `align-items`). Foi o mais completo e difícil.</p>
-    <img src="imgs/flexboxfroggy3.png" alt="Flexbox Froggy - Nível 24">
+    <p><strong>Nível 10:</strong> Sabia que tinha que usar o <code>row-reverse</code>, mas tive dúvidas de qual usar para colocar cada um no seu devido lugar.</p>
+    <img src="imgs/flexboxfroggy3.png" alt="Flexbox Froggy - Nível 10">
 
     <hr>
 
@@ -89,22 +62,34 @@
     <h3>Propriedades CSS Utilizadas</h3>
     <ul>
         <li><strong>display: flex;</strong> – transforma um container em um flex container.</li>
-        <li><strong>flex-direction:</strong> define a direção dos itens (linha, coluna, etc).</li>
-        <li><strong>justify-content:</strong> alinha os itens no eixo principal (horizontal, por padrão).</li>
-        <li><strong>align-items:</strong> alinha os itens no eixo transversal (vertical, por padrão).</li>
-        <li><strong>align-self:</strong> ajusta o alinhamento de um item individual dentro do container.</li>
-        <li><strong>order:</strong> muda a ordem dos itens dentro do container.</li>
-        <li><strong>center:</strong> valor de <code>justify-content</code> ou <code>align-items</code> que centraliza os itens.</li>
-        <li><strong>flex-end:</strong> valor usado para alinhar os itens ao final do eixo.</li>
-        <li><strong>space-between:</strong> valor de <code>justify-content</code> que distribui os itens com espaço entre eles.</li>
-        <li><strong>space-around:</strong> distribui os itens com espaço ao redor de cada um.</li>
-        <li><strong>space-evenly:</strong> distribui os itens com espaçamento completamente igual entre todos.</li>
-        <li><strong>row-reverse:</strong> inverte a ordem dos itens na horizontal.</li>
-        <li><strong>column:</strong> posiciona os itens em coluna (um abaixo do outro).</li>
+
+        <li><strong>justify-content:</strong> alinha os itens no eixo principal.
+            <ul>
+                <li><code>center</code> – centraliza os itens no container.</li>
+                <li><code>flex-end</code> – alinha os itens ao final do eixo principal.</li>
+                <li><code>space-between</code> – distribui os itens com espaçamento apenas entre eles.</li>
+                <li><code>space-around</code> – distribui os itens com espaçamento em volta de cada item.</li>
+                <li><code>space-evenly</code> – distribui os itens com espaçamento igual entre e ao redor dos itens.</li>
+            </ul>
+        </li>
+
+        <li><strong>align-items:</strong> alinha os itens no eixo transversal.
+            <ul>
+                <li><code>flex-end</code> – alinha os itens ao final do eixo cruzado.</li>
+                <li><code>center</code> – centraliza os itens no eixo cruzado.</li>
+            </ul>
+        </li>
+
+        <li><strong>flex-direction:</strong> define a direção dos itens no container.
+            <ul>
+                <li><code>column</code> – organiza os itens verticalmente de cima para baixo.</li>
+                <li><code>row-reverse</code> – organiza os itens horizontalmente da direita para a esquerda.</li>
+            </ul>
+        </li>
     </ul>
 
     <h3>Exemplo de Aplicação Prática</h3>
-    <p>Se eu estivesse criando um <strong>menu de navegação</strong> para um site, usaria Flexbox para alinhar os botões de forma organizada e responsiva. Por exemplo, com <code>justify-content: space-between</code>, os itens do menu ficariam distribuídos com espaçamento igual entre eles, deixando o layout limpo. Caso eu quisesse centralizar todos os itens no meio da barra de navegação, usaria <code>justify-content: center</code>. Se fosse necessário alinhar os itens à esquerda ou à direita, usaria <code>flex-start</code> ou <code>flex-end</code>, respectivamente.</p>
+    <p>Se eu estivesse desenvolvendo um <strong>menu de navegação responsivo</strong>, usaria <code>display: flex</code> com <code>justify-content: space-between</code> para espaçar os itens do menu igualmente. Em telas menores, aplicaria <code>flex-direction: column</code> com <code>align-items: center</code> para que os itens ficassem empilhados e centralizados.</p>
 
 </body>
 </html>
