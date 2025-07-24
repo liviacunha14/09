@@ -1,6 +1,6 @@
-/* Estilo base da página */
+/* Fundo da página com tom roxo bem claro */
 body {
-  background-color: #f5f0fa;
+  background-color: #eae6f9;
   font-family: Arial, sans-serif;
   color: #2e003e;
   margin: 0;
@@ -9,37 +9,39 @@ body {
   justify-content: center;
 }
 
-/* Caixa central com borda arredondada e fundo roxo claro */
+/* Container principal com fundo roxo claro */
 .container {
-  background-color: #f2c7ff;
+  background-color: #d9d0f2;
   border-radius: 15px;
   padding: 30px;
-  max-width: 800px;
+  max-width: 850px;
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(60, 0, 90, 0.1);
 }
 
-/* Cabeçalhos */
+/* Títulos */
 h1 {
-  color: #a84ed6;
-  font-size: 28px;
+  color: #4b0082; /* índigo escuro */
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #9e40c9;
+  color: #5d3fd3; /* roxo médio */
   font-size: 24px;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  color: #7d28a9;
+  color: #6a0dad; /* roxo clássico */
   font-size: 20px;
   margin-top: 20px;
 }
 
 /* Links */
 a {
-  color: #6d1fa6;
+  color: #4b00c1;
   text-decoration: none;
 }
 
@@ -47,12 +49,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Seções dos jogos */
+/* Seção de cada jogo */
 .jogo {
-  background-color: #f9e6ff;
+  background-color: #ede9f9;
   padding: 15px;
   margin-bottom: 20px;
-  border-left: 5px solid #efddfa;
+  border-left: 5px solid #8a2be2; /* roxo escuro */
   border-radius: 8px;
 }
 
@@ -62,8 +64,8 @@ img {
   height: auto;
   margin-top: 10px;
   margin-bottom: 20px;
-  border-radius: 5px;
-  border: 2px solid #dda8ff;
+  border-radius: 6px;
+  border: 2px solid #bba8f2;
 }
 
 /* Listas */
@@ -75,19 +77,19 @@ li {
   margin-bottom: 10px;
 }
 
-/* Código */
+/* Código em destaque */
 code {
-  background-color: #ebd8ff;
-  padding: 2px 5px;
+  background-color: #cec2f0;
+  padding: 3px 6px;
   border-radius: 4px;
   font-family: Consolas, monospace;
-  color: #6a0080;
+  color: #3a0066;
 }
 
 /* Linhas divisórias */
 hr {
   border: none;
-  border-top: 2px solid #e0aaff;
+  border-top: 2px solid #c1b3ec;
   margin: 30px 0;
 }
 
